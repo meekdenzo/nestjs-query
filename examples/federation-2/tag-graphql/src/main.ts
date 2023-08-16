@@ -16,7 +16,7 @@ async function bootstrap(): Promise<void> {
     })
   )
 
-  await app.listen(6003)
+  await app.listen(3003)
 }
 
 // eslint-disable-next-line no-void

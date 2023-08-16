@@ -92,6 +92,51 @@
         "tsConfigPath": "./tsconfig.json"
       }
     },
+    "federation-2:gateway": {
+      "type": "application",
+      "root": "federation-2/gateway",
+      "entryFile": "main",
+      "sourceRoot": "federation-2/graphql-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "./tsconfig.json"
+      }
+    },
+    "federation-2:sub-task": {
+      "type": "application",
+      "root": "federation-2/sub-task-graphql",
+      "entryFile": "main",
+      "sourceRoot": "federation-2/sub-task-graphql/src",
+      "compilerOptions": {
+        "tsConfigPath": "./tsconfig.json"
+      }
+    },
+    "federation-2:tag": {
+      "type": "application",
+      "root": "federation-2/tag-graphql",
+      "entryFile": "main",
+      "sourceRoot": "federation-2/tag-graphql/src",
+      "compilerOptions": {
+        "tsConfigPath": "./tsconfig.json"
+      }
+    },
+    "federation-2:todo-item": {
+      "type": "application",
+      "root": "federation-2/todo-item-graphql",
+      "entryFile": "main",
+      "sourceRoot": "federation-2/todo-item-graphql/src",
+      "compilerOptions": {
+        "tsConfigPath": "./tsconfig.json"
+      }
+    },
+    "federation-2:user": {
+      "type": "application",
+      "root": "federation-2/user-graphql",
+      "entryFile": "main",
+      "sourceRoot": "federation-2/user-graphql/src",
+      "compilerOptions": {
+        "tsConfigPath": "./tsconfig.json"
+      }
+    },
     "hooks": {
       "type": "application",
       "root": "hooks",
