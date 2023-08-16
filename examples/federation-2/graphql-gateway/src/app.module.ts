@@ -13,10 +13,10 @@ import { GraphQLModule } from '@nestjs/graphql'
       },
       gateway: {
         serviceList: [
-          { name: 'todo-items', url: 'http://localhost:4001/graphql' },
-          { name: 'sub-tasks', url: 'http://localhost:4002/graphql' },
-          { name: 'tags', url: 'http://localhost:4003/graphql' },
-          { name: 'user', url: 'http://localhost:4004/graphql' }
+          { name: 'todo-items', url: 'http://localhost:6001/graphql' },
+          { name: 'sub-tasks', url: 'http://localhost:6002/graphql' },
+          { name: 'tags', url: 'http://localhost:6003/graphql' },
+          { name: 'user', url: 'http://localhost:6004/graphql' }
         ]
       }
     })
