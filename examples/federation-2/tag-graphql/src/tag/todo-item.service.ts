@@ -5,11 +5,16 @@ import { TagTodoItemEntity } from './tag-todo-item.entity'
 
 @QueryService(TodoItemReferenceDTO)
 export class TodoItemService extends RelationQueryService<TodoItemReferenceDTO> {
-  constructor(@InjectQueryService(TagTodoItemEntity) readonly tagTodoItemService: QueryService<TagTodoItemEntity>) {
+  constructor(
+    @InjectQueryService(TagTodoItemEntity)
+    readonly tagTodoItemService: QueryService<TagTodoItemEntity>
+  ) {
     super({
       tagTodoItems: {
         service: tagTodoItemService,
-        query: (ref: TodoItemReferenceDTO) => ({ filter: { todoItemId: { eq: ref.id } } })
+        query: (ref: TodoItemReferenceDTO) => ({
+          filter: { todoItemId: { eq: ref.id } }
+        })
       }
     })
   }

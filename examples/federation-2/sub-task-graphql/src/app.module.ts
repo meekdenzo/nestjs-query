@@ -11,8 +11,9 @@ import { SubTaskModule } from './sub-task/sub-task.module'
     TypeOrmModule.forRoot(typeormOrmConfig('federation_sub_task')),
     GraphQLModule.forRoot({
       driver: ApolloFederationDriver,
-      federation: 2, // update version
-      autoSchemaFile: 'examples/sub-task-graphql/schema.gql'
+      autoSchemaFile: {
+        federation: 2
+      }
     }),
     SubTaskModule
   ]
